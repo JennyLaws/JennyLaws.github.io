@@ -6,9 +6,10 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/buhoFondo1.png") top center;
+    background-size: cover;
 }
 
 .container {
