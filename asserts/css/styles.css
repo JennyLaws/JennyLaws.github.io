@@ -25,7 +25,7 @@ header {
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     height: 400px; /* Ajusta esta altura según tus necesidades */
     position: relative; /* Asegura que el contenido esté dentro del header */
-    color: white; /* Asegura que el texto sea visible sobre el fondo */
+    color: rgb(0, 0, 0); /* Asegura que el texto sea visible sobre el fondo */
     text-align: center;
     padding: 20px 0;
 }
