@@ -19,7 +19,7 @@ body {
 /* Header */
 
 header {
-    background-image: url('asserts/images/buhoFondo1.jpg'); /* Cambia por la ruta correcta */
+    background-image: url('asserts/images/buhoFondo1.png'); /* Cambia por la ruta correcta */
     background-size: cover; /* La imagen cubrirá todo el header */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
