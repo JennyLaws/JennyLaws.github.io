@@ -4,33 +4,47 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 body {
-    width: 100%;
-    height: 100vh;
-    background: url("../images/buhoFondo1.png") top center;
-    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
 }
-
 .container {
     width: 80%;
     margin: 0 auto;
 }
 
-/* Header */
-
+/*Headers*/
 header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 20px 0;
+    background-image: url(../img/buhoFondo.jpg); /* Cambia la ruta de la imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el espacio del header */
+    background-position: center; /* Centra la imagen en el header */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: white; /* Mantiene el texto en color blanco para que sea legible sobre la imagen */
+    padding: 20px 0; /* Ajusta el espaciado vertical */
+    height: 400px; /* Ajusta la altura del encabezado para que la imagen sea visible */
     text-align: center;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 25px 0;
 }
+
+header nav ul li a {
+    color: white; /* Asegura que los enlaces del menú sean visibles */
+}
+
+header h1 a {
+    color: white; /* Asegura que el título sea visible sobre la imagen */
+    text-decoration: none;
+}
+
 
 header h1 {
     font-size: 3em;
     margin-bottom: 10px;
 }
-
 header p {
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -39,68 +53,56 @@ header p {
 nav ul {
     list-style: none;
 }
-
 nav ul li {
     display: inline;
     margin: 0 15px;
 }
-
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 1.1em;
 }
-
 nav ul li a:hover {
     text-decoration: underline;
 }
-
 /* Sección de Sobre mí */
 #about {
     background-color: #ecf0f1;
     padding: 60px 0;
     text-align: center;
 }
-
 #about h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-
 /* Sección de Habilidades */
 #skills {
     padding: 60px 0;
 }
-
 #skills h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     text-align: center;
 }
-
 #skills ul {
     list-style: none;
     text-align: center;
 }
-
 #skills ul li {
     display: inline-block;
     margin: 10px 30px;
     font-size: 1.2em;
 }
-
 /* Sección de Proyectos */
 #projects {
     background-color: #ecf0f1;
     padding: 60px 0;
 }
-
 #projects h2 {
     font-size: 2.5em;
     margin-bottom: 40px;
     text-align: center;
 }
-
 .project {
     display: inline-block;
     width: 45%;
@@ -111,17 +113,14 @@ nav ul li a:hover {
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 .project img {
     width: 100%;
     height: auto;
     border-radius: 8px;
 }
-
 .project h3 {
     margin: 15px 0;
 }
-
 .project a {
     display: inline-block;
     padding: 10px 20px;
@@ -131,31 +130,25 @@ nav ul li a:hover {
     border-radius: 5px;
     margin-top: 10px;
 }
-
 .project a:hover {
     background-color: #34495e;
-}∫
-
+}
 /* Sección de Contacto */
 #contact {
     padding: 60px 0;
     text-align: center;
 }
-
 #contact h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
 }
-
 #contact ul {
     list-style: none;
     font-size: 1.2em;
 }
-
 #contact ul li {
     margin: 10px 0;
 }
-
 /* Pie de página */
 footer {
     background-color: #2c3e50;
@@ -163,7 +156,41 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
-
 footer p {
     font-size: 1em;
+}
+
+
+/* Oculta el submenú por defecto */
+li ul {
+    display: none;            /* Oculta el submenú inicialmente */
+    position: absolute;       /* Asegura que el submenú no desplace el contenido */
+    top: 350px; /* Posiciona el elemento a 50px desde el borde superior del contenedor */
+    left: 1200px; /* Posiciona el elemento a 100px desde el borde izquierdo */
+    background-color: black;  /* Fondo negro */
+    padding: 10px;            /* Espaciado interno */
+    list-style: none;         /* Elimina las viñetas de la lista */
+    z-index: 1000;            /* Asegura que el submenú se superponga a otros elementos */
+}
+
+/* Muestra el submenú cuando pasas el mouse sobre el <li> */
+li:hover > ul {
+    display: block;           /* Muestra el submenú */
+}
+
+/* Asegura que los elementos del submenú aparezcan como lista vertical */
+li ul li {
+    display: block;           /* Asegura que los <li> sean bloques (verticales) */
+    margin-bottom: 10px;      /* Espaciado entre los elementos de la lista */
+}
+
+/* Estilos para los enlaces dentro del submenú */
+li ul li a {
+    text-decoration: none;    /* Elimina el subrayado de los enlaces */
+    color: #333;              /* Color del texto */
+}
+
+/* Cambia el color del enlace cuando pasas el mouse sobre él */
+li ul li a:hover {
+    color: #007BFF;           /* Color azul en el hover */
 }
