@@ -165,8 +165,8 @@ footer p {
 li ul {
     display: none;            /* Oculta el submenú inicialmente */
     position: absolute;       /* Asegura que el submenú no desplace el contenido */
-    top: 350px; /* Posiciona el elemento a 50px desde el borde superior del contenedor */
-    left: 1200px; /* Posiciona el elemento a 100px desde el borde izquierdo */
+    top: 80%;                   /* Posiciona el submenú relativo al <li> padre */
+    left: 60%;               /* Posiciona el submenú a la derecha del <li> padre */
     background-color: black;  /* Fondo negro */
     padding: 10px;            /* Espaciado interno */
     list-style: none;         /* Elimina las viñetas de la lista */
